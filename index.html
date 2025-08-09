@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bezel</title>
+    <!-- fon awesome file ------->
+    
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Google fonts ------->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alegreya+Sans+SC:ital,wght@1,100&family=Amatic+SC:wght@700&family=Cairo:wght@200;300&family=Montserrat:wght@200;300&family=Open+Sans:wght@700&family=Poppins:wght@100;200;400;900&family=Roboto:wght@100;700&family=Source+Code+Pro:wght@700&family=Source+Sans+3:wght@300;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alegreya+Sans+SC:ital,wght@1,100&family=Amatic+SC:wght@700&family=Cairo:wght@200;300&family=Montserrat:wght@200;300&family=Open+Sans:wght@700&family=Poppins:wght@100;200;400&family=Roboto:wght@100;700&family=Source+Code+Pro:wght@700&family=Source+Sans+3:wght@300;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alegreya+Sans+SC:ital,wght@1,100&family=Amatic+SC:wght@700&family=Cairo:wght@200;300&family=Montserrat:wght@200;300&family=Open+Sans:wght@700&family=Poppins:wght@100;200;400&family=Roboto:wght@100;700&family=Source+Sans+3:wght@300;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alegreya+Sans+SC:ital,wght@1,100&family=Amatic+SC:wght@700&family=Cairo:wght@200;300&family=Montserrat:wght@200;300&family=Open+Sans:wght@700&family=Poppins:wght@100;200;400&family=Roboto:wght@100;700&family=Source+Sans+3:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap file  ----->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Main style file ------>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="home " id="home">
+
+
+      
+      <div id="carouselExampleSlidesOnly"  class="carousel slide " data-bs-ride="carousel">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+          <div class="container ">
+            <a class="navbar-brand fw-bolder text-white" href="#home">bezel<span class="">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse h-100 " id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#price">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contact" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <div class="social ">
+                <ul>
+                  <li >
+                    <a href="https://www.google.com/search?q=facebook&rlz=1C1SQJL_enEG995EG995&oq=face&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgYIAhBFGEAyCggDEAAYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyBwgGEAAYgAQyDQgHEAAYgwEYsQMYgATSAQk1MDM1ajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.com/search?q=twitter&sca_esv=587070021&rlz=1C1SQJL_enEG995EG995&sxsrf=AM9HkKmHFbwd8sYJe5-DLb4Kbs5vpAIhTA%3A1701467287249&ei=l1RqZaHtDtCAi-gPip2YiAw&oq=twi&gs_lp=Egxnd3Mtd2l6LXNlcnAiA3R3aSoCCAAyChAjGIAEGIoFGCcyFhAuGEMYgwEYxwEYsQMY0QMYgAQYigUyEBAAGIAEGIoFGEMYsQMYgwEyEBAuGIAEGIoFGEMYxwEY0QMyEBAAGIAEGIoFGEMYsQMYgwEyCBAuGIAEGLEDMg4QLhiABBixAxjHARjRAzIKEAAYgAQYigUYQzILEAAYgAQYsQMYgwEyChAAGIAEGIoFGEMyJRAuGEMYgwEYxwEYsQMY0QMYgAQYigUYlwUY3AQY3gQY4ATYAQJIxBpQpgpY4Q5wAXgBkAEAmAGCAaAB9wKqAQMwLjO4AQHIAQD4AQGoAhTCAgcQIxjqAhgnwgITEAAYgAQYigUYQxjqAhi0AtgBAcICFhAuGIAEGIoFGEMYsQMYgwEYxwEY0QPCAiUQLhiABBiKBRhDGLEDGIMBGMcBGNEDGJcFGNwEGN4EGOAE2AEC4gMEGAAgQYgGAboGBggBEAEYAboGBggCEAEYFA&sclient=gws-wiz-serp" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.com/search?q=instagram&sca_esv=587070021&rlz=1C1SQJL_enEG995EG995&sxsrf=AM9HkKkpBeDbUEK6S-22ke8pNXJGC26Q0w%3A1701467316469&ei=tFRqZeaeHJO3sAfgyonwBQ&oq=in&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmluKgIIADIKECMYgAQYigUYJzIEECMYJzIQEAAYgAQYigUYQxixAxiDATIKEAAYgAQYigUYQzIQEAAYgAQYigUYQxixAxiDATIQEAAYgAQYigUYQxixAxiDATILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQLhiABDIIEC4YgAQYsQNIixdQzgRYxw1wAngBkAEEmAG2AaAB8weqAQMwLje4AQHIAQD4AQGoAhTCAhEQLhiABBixAxiDARjHARjRA8ICCBAAGIAEGMsBwgIFEAAYgATCAiAQLhiABBixAxiDARjHARjRAxiXBRjcBBjeBBjgBNgBAcICBxAjGOoCGCfCAhAQLhgDGI8BGOoCGLQC2AECwgIQEAAYAxiPARjqAhi0AtgBAsICDhAuGAEYgAQYigUYQxgKwgIUEC4YgAQYigUYsQMYgwEYxwEYrwHCAggQABiABBixA-IDBBgAIEGIBgG6BgYIARABGBS6BgYIAhABGAo&sclient=gws-wiz-serp" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+        </nav>
+      
+      
+        <div class="carousel-indicators">
+          
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner  ">
+          <div class="carousel-item active h-100 ">
+            
+            <div class="img"><img src="./images/bg-image-28.jpg" class="d-block w-100 vh-100 " alt="...">
+            </div>
+           
+            <div class="carousel-caption    d-md-block  ">
+              <h1 class="display-1  fw-bolder">Get Awesome.</h1>
+              <p class="d-block h5">We are an innovative company maing digital stuff</p>
+              
+                <div class="btns">
+                <button type="button" class="btn1 ">Read More</button>
+                <button type="button" class="btn2 ">Contact</button>
+                </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="img"><img src="./images/bg-image-29.jpg" class="d-block w-100 vh-100 " alt="..."></div>
+            <div class="carousel-caption   d-md-block    ">
+              <h1 class="display-1 fw-bolder">Create With Bezel.</h1>
+              <p class="d-block h5">We help ambitious companies create new value</p>
+              <div class="btns">
+                <button type="button" class="btn1 ">Hire Us</button>
+                <button type="button" class="btn2">Services</button>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      
+        <div class="prev">
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+            <span  aria-hidden="true"><i class="fa-solid fa-arrow-left fa-sm"></i></span>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+         </div>
+        <div class="next">
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+            <span aria-hidden="true"><i class="fa-solid fa-arrow-right fa-sm"></i></span>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+        </div>
+      
+    
+    </div>
+      
+          
+    </header>
+
+
+
+    <section id="about" class="about py-5 h-100 ">
+      <div class="content  py-5 my-5">
+        <h5 class="w-100  d-flex justify-content-center py-3" >WHO WE ARE</h5>
+        <p class="lead text-center">We are an innovative company. We develop and design <span  id="element"></span>
+        for costumers around the world. Our clients are some of the most forward-looking companies in the world.</p>
+        <button type="button" class="btn-about  border-1">Read More</button>
+      </div>
+    </section>
+
+    <section id="team" class="py-5">
+      <div class="team-content ">
+       <div class="title-team text-center py-4">
+        <h2 class="fw-bolder display-6">Creative Team</h2>
+        <p class="lead opacity-75  ">We are digital thinkers</p>
+       </div>
+        <div class="row container m-auto row1">
+          <div class="col-md-3 col1">
+            <div class="image">
+              <img  class="w-100" src="./images/team-1.jpg" alt="">
+              <div class="img-caption">
+                <div class="icons p-3 ">
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-facebook-f fa-sm"></i></a>
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-twitter fa-sm"></i></a>
+                  <a  class="text-white m-1" href=""><i class="fa-brands fa-linkedin-in fa-sm"></i></a>
+                  
+                <div class="caption-bottom ">
+                  <h6 class="fw-bold">LUKE CAGE</h6>
+                  <p>Founder & CEO</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="image">
+              <img class="w-100" src="./images/team-2.jpg" alt="">
+              <div class="img-caption">
+                <div class="icons p-3 ">
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-facebook-f fa-sm"></i></a>
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-twitter fa-sm"></i></a>
+                  <a  class="text-white m-1" href=""><i class="fa-brands fa-linkedin-in fa-sm"></i></a>
+                  
+                <div class="caption-bottom ">
+                  <h6 class="fw-bold">JESSICA JONES</h6>
+                  <p>Product Designer</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="image">
+              <img class="w-100" src="./images/team-3.jpg" alt="">
+              <div class="img-caption">
+                <div class="icons p-3 ">
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-facebook-f fa-sm"></i></a>
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-twitter fa-sm"></i></a>
+                  <a  class="text-white m-1" href=""><i class="fa-brands fa-linkedin-in fa-sm"></i></a>
+                  
+                <div class="caption-bottom ">
+                  <h6 class="fw-bold">MATT MURDOCK</h6>
+                  <p>Lead Developer</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="image">
+              <img class="w-100" src="./images/team-4.jpg" alt="">
+              <div class="img-caption">
+                <div class="icons p-3 ">
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-facebook-f fa-sm"></i></a>
+                  <a class="text-white m-1" href=""><i class="fa-brands fa-twitter fa-sm"></i></a>
+                  <a  class="text-white m-1" href=""><i class="fa-brands fa-linkedin-in fa-sm"></i></a>
+                  
+                <div class="caption-bottom ">
+                  <h6 class="fw-bold">CLAIRE TEMPLE</h6>
+                  <p>Sales Manager</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <section id="services" class="services py-5">
+    <div class="service-content text-white py-5">
+      <div class="row container m-auto g-2 p-4">
+        <div class="col-md-2">
+          <div class="item">
+            <h6>STUNNING DESIGN</h6>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="item">
+            <h6>TIME SAVER</h6>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="item">
+            <h6>CLEAN CODE</h6>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="item">
+            <h6>CUSTOMIZABLE</h6>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="item">
+            <h6>PERFECT LAYOUT</h6>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="item">
+            <h6>RETINA READY</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="row container m-auto g-2 py-5">
+        <div class="col-md-4  py-3">
+          <div class="item-row2">
+            <h2>What We Do.</h2>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsam ullam incidunt itaque nemo omnis temporibus totam quibusdam repellat vero, recusandae excepturi dignissimos velit et alias amet, quia facilis perferendis.</p>
+          </div>
+        </div>
+        <div class="col-md-3 offset-2 py-3">
+          <div class="item-row2">
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Research</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Opportunity Analysis</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Consulting</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Brand Planning</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Customer Support</h6>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-3">
+          <div class="item-row2">
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Logo & Branding</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Style guides</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Motion graphics</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>UX/UI-design</h6>
+            <h6><span><i class="fa-regular fa-circle-check fa-sm"></i></span>Social media design</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+   <section id="price" class="price py-5">
+    <div class="price-content py-5">
+      <div class="title-price text-center py-4">
+        <h2 class="fw-bolder display-6 text-center ">Cheap Prices</h2>
+        <p class="lead  opacity-75 ">We provide the best quality.</p>
+       </div>
+
+       <div class="row container m-auto">
+        <div class=" col-md-3 ">
+          <div class="col-content py-5 ">
+            <div class="top-item border-bottom border-1">
+              <h6 >Starter</h6>
+              <h3 class="h1"> <span>$</span>9</h3>
+            </div>
+            <div class="middle-item">
+              <ul class="lead ">
+                <li>Unlimited Connections</li>
+                <li>24/7 Support</li>
+                <li>Full SSL Protection</li>
+                <li>Unlimited Channels</li>
+
+              </ul>
+            </div>
+            <div class="bottom-item">
+              <button type="button" class="btn-price  ">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-3 ">
+          <div class="col-content py-5 ">
+            <div class="top-item border-bottom border-1">
+              <h6 >Starter</h6>
+              <h3 class="h1"> <span>$</span>19</h3>
+            </div>
+            <div class="middle-item">
+              <ul class="lead ">
+                <li>Unlimited Connections</li>
+                <li>24/7 Support</li>
+                <li>Full SSL Protection</li>
+                <li>Unlimited Channels</li>
+
+              </ul>
+            </div>
+            <div class="bottom-item">
+              <button type="button" class="btn-price  ">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-3 ">
+          <div class="col-content py-5 vip ">
+            <div class="top-item border-bottom border-1 gold">
+              <span class="best">BEST VALUE</span>
+              <h6 >Silver</h6>
+              <h3 class="h1"> <span>$</span>29</h3>
+            </div>
+            <div class="middle-item">
+              <ul class="lead ">
+                <li>Unlimited Connections</li>
+                <li>24/7 Support</li>
+                <li>Full SSL Protection</li>
+                <li>Unlimited Channels</li>
+
+              </ul>
+            </div>
+            <div class="bottom-item">
+              <button type="button" class="btn-price  ">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-3 ">
+          <div class="col-content py-5 ">
+            <div class="top-item border-bottom border-1 ">
+              <h6 >Gold</h6>
+              <h3 class="h1"> <span>$</span>49</h3>
+            </div>
+            <div class="middle-item">
+              <ul class="lead ">
+                <li>Unlimited Connections</li>
+                <li>24/7 Support</li>
+                <li>Full SSL Protection</li>
+                <li>Unlimited Channels</li>
+
+              </ul>
+            </div>
+            <div class="bottom-item">
+              <button type="button" class="btn-price  ">Sign Up</button>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+   </section>
+
+   <section class="client">
+    <div class="client-content">
+      <h6 class="text-center p-5">HAPPY CUSTOMERS</h6>
+
+
+
+
+      <div id="carouselExampleCaptions" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button " data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active my-5">
+           
+            <img src="./images/testimonial-1.jpg" class="d-block rounded-circle" alt="...">
+            <div class="carousel-caption d-md-block text-black text-center">
+              <h3 class="fw-bold">Marissa Mayer</h3>
+              <p class="lead fw-bold opacity-50">CEO , YAHOO</p>
+              <p class="lead"> assumenda, possimus rerum quod quae iure iusto magni sapiente quia molestias qui, debitis, optio perferendis deserunt doloribus quam magnam sequi velit recusandae voluptas laborum quidem? Voluptate eveniet, similique quae velit hic optio deserunt a quisquam minus temporibus asperiores sunt earum!</p>
+           </div>
+          </div>
+          <div class="carousel-item my-5">
+            <img src="./images/testimonial-2.jpg" class="d-block rounded-circle" alt="...">
+            <div class="carousel-caption d-md-block text-black text-center">
+              <h3 class="fw-bold">Mark Zuckerberg</h3>
+              <p class="fw-bold opacity-50">FOUNDER & CEO , FACEBOOK</p>
+              <P class="lead"> quasi voluptatum, ipsam eius at distinctio, velit quos dolore omnis soluta, debitis corrupti! Voluptates totam, voluptate deleniti eligendi in qui quis laborum dolore! Commodi aut architecto iste illum sapiente itaque suscipit sit soluta, sequi inventore nihil, nisi ullam?</P>
+            </div>
+          </div>
+         
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span  aria-hidden="true"><i class="fa-solid fa-arrow-left fa-lg"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span  aria-hidden="true"><i class="fa-solid fa-arrow-right fa-lg "></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+    </div>
+   </section>
+
+
+   <footer id="contact">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d155024.31393785862!2d31.160382376808368!3d30.84227191853095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1701548337925!5m2!1sar!2seg" width="600" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-md-5 offset-2 py-5">
+          <div class="contact">
+            <h2>Get In Touch</h2>
+            <p class="lead opacity-75 ">Let's work together.</p>
+            <form >
+              <label class="d-block" for="name">Your name</label>
+              <input class="w-75" type="text" name="name" id="name">
+
+              <label class="d-block " for="email">Your Email</label>
+              <input class="w-75" type="email" name="email" id="name">
+
+              <label class="d-block " for="phone">Phone Number</label>
+              <input class="w-75" type="email" name="email" id="name">
+              <label  class="d-block" for="message">Your Message</label>
+              <textarea name="message" id="" cols="48" rows="5"></textarea>
+              <button  class="sub-button" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+   </footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['software', 'apps','websites'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+        backDelay: 1000,
+      });
+    </script>
+     <!-- Bootstrap file -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

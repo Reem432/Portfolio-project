@@ -1,0 +1,615 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+
+font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#00D5EE;
+}
+h2{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+   
+}
+/* Header ---------------------------------------------------------------------------------*/
+
+.fit-content{
+    width: fit-content;
+}
+
+ .home.carousel-item{
+    position: relative; 
+   
+}
+.home .carousel-item .img{
+    position: relative;
+   
+}
+.home .carousel-item .img:after{
+    content: "";
+    background-color: rgba(53, 51, 51, 0.514);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+    
+}
+.home .carousel-inner{
+ position: relative;
+}
+
+ 
+.home .carousel-caption {
+ position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 20%; 
+  
+  
+    
+}
+ .home .carousel-caption h1 {
+    font-size: 100px;
+    padding-bottom: 15px;
+
+}
+.home .carousel-caption .btns button{
+    margin-top:20px ;
+    margin-inline: 6px;
+    width: auto;
+    padding-inline: 20px;
+    padding-block:10px ;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.home .carousel-caption .btns  .btn1{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+  .carousel-caption .btns  .btn1:hover{
+    color: #00D5EE;
+    color: white;
+    filter: brightness(110%);
+    transform: translateY(-2px);  
+}
+ .carousel-caption .btns  .btn2{
+    background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.3s;
+    
+}
+  .carousel-caption .btns  .btn2:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-1px);
+}
+
+.home .carousel{
+    position: relative;
+    
+}
+
+ .home .carousel  span i{
+    color: white;
+    font-size: 16px; 
+    transition: all 0.5s;
+    z-index: 9;
+    
+}
+
+
+ .home .carousel  .carousel-control-prev{
+    position: absolute;
+    top: -30%;
+    display: flex;
+    justify-content: start;
+    width: 0%;
+    opacity: 1;
+    
+    
+    
+    
+}
+.home  .carousel  .carousel-control-next{
+    position: absolute;
+    left: 0;
+    bottom: 48%;
+    display: flex;
+    justify-content: start;
+    width: 0%;
+    opacity: 1;
+    
+
+}
+.home .carousel  .prev .carousel-control-prev span{
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+ .home .carousel  .next .carousel-control-next span{
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   overflow: hidden;
+
+    
+}
+
+.home .carousel  .prev .carousel-control-prev span::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    transition: all 0.3s;
+    
+}
+ .home .carousel  .next .carousel-control-next span::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 100%;
+    transition: all 0.3s;
+    
+}
+ .home.carousel  .prev .carousel-control-prev:hover span::after{
+    right: 0;
+
+}
+.home .carousel  .prev .carousel-control-prev span:hover i{
+color: black;
+}
+.home .carousel  .next .carousel-control-next:hover span::after{
+    right: 0;
+
+}
+.home .carousel  .next .carousel-control-next span:hover i{
+    color: black;
+    }
+
+    /* Navbar------------------------------------------------------------------- */
+    .navbar{
+       margin: 0;
+       padding: 0; 
+       border-bottom: .2px solid rgba(255, 255, 255, 0.2);
+       
+    }
+    .nav-link .active{
+        color: #626262;
+        
+    }
+.container{
+    display: flex;
+    justify-content: center;
+}
+.navbar .container .navbar-brand{
+    font-size: 35px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+font-family: 'Alegreya SC', serif;
+font-family: 'Amatic SC', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+
+}
+.navbar .container .navbar-brand span{
+    color: var(--main-color);
+    font-size: 40px;
+}
+.navbar-toggler i{
+    color:white;
+    font-size: 30px;
+}
+/* .social{
+    border-left: 1px solid rgba(255, 255, 255,0.2);
+} */
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.social ul li{
+    padding-inline: 10px;
+}
+.social ul li a{
+    color: white;
+}
+.collapse ul li a{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.collapse ul li a.active {
+    color: #626262;
+}
+.contact{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    /* height: 100%; */
+    
+}
+/* About--------------------------------------------------------------------------------------- */
+#element{
+    color: #00D5EE !important;
+    font-weight: bolder;
+}
+#about {
+    border-bottom:1px solid rgba(0, 0, 0, 0.107);
+}
+#about .content{
+    width: 60%;
+    margin: auto;
+    position: relative;
+ 
+}
+#about .content h5{
+    font-size: 13px;
+}
+#about .content p{
+    opacity: 75%;
+    line-height: 35px;
+    font-size: 20px;
+}
+#about .content .btn-about{
+    padding: 15px;
+    padding-inline:30px ;
+    border: solid rgba(0, 0, 0, 0.107);
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 30px;
+    background-color: white;
+    transition: all 0.3s;
+
+
+    
+}
+#about .content .btn-about:hover{
+    background-color: #1F1F1F;
+    color: white;
+}
+/* Team ------------------------------------------------------------------------------- */
+#team .team-content .title-team h2{
+    position: relative;
+    left: -35px;
+}
+
+#team .team-content .title-team h2::before{
+content: "C";
+position: relative;
+font-size:80px;
+font-weight: 900;
+color: #F4F4F4;
+z-index: -2;
+left: 13%;
+
+}
+#team .team-content .title-team p{
+    font-size: 16px;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+}
+ .image .img-caption{
+    background-color: #00d6eeda;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s;
+    
+
+}
+.image:hover .img-caption{
+    opacity: 1;
+    top: 0;
+    
+}
+.image .img-caption .caption-bottom{
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+}
+.image .img-caption .caption-bottom h6{
+    font-size: 14px;
+}
+/* Services---------------------------------------------------------------------------------------- */
+#services{
+    background-color: #626262;
+    position: relative;
+}
+#services .item h6{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing:1.5px;
+ 
+}
+#services .item-row2 h2{
+    z-index: 3;
+    position:relative;
+    left: 0;
+    font-weight: bolder;
+    
+}
+#services .item-row2 p{
+    margin-top:20px ;
+letter-spacing: 0.1px;
+word-spacing: 0.2px;
+font-size: 14px;
+line-height: 25px;
+
+}
+#services .item-row2 h2::before{
+    content: "W";
+    position:absolute;
+    font-size:80px;
+    font-weight: 900;
+    color:#6B6B6B;
+    z-index: -1;
+    top: -48px;
+    left: -15px;
+    
+    
+    }
+    #services .item-row2 h6 span{
+        margin-right:10px ;
+    }
+    #services .item-row2 h6 {
+        margin-bottom:20px ;
+        font-size: 15px;
+    }
+
+/* Price------------------------------------------------------------------------------------ */
+#price{
+    background-color: #F7F7F7;
+}
+#price h2{
+    z-index: 3;
+    position:relative;
+    left: -35px;
+    font-size:40px;
+}
+
+#price h2::before{
+    content: "C";
+    position: relative;
+    font-size:80px;
+    font-weight: 900;
+    color:#EAEAEA;
+    z-index: -2;
+    left: 10%;
+    
+    }
+#price p{
+     font-size: 18px;
+     word-spacing: 0.1px;
+     letter-spacing: 0.3px;
+     font-size: 16px;
+}
+#price .col-content{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    padding-inline: 20px;
+}
+#price .vip{
+    transform: scale(1.1);
+}
+#price .col-content .gold{
+    color: #00C3DA;
+}
+#price .col-content .gold .best{
+    background-color:#00C3DA;
+    color: white;
+    font-size: 9px;
+    border: #00C3DA 1px solid;
+    padding-block: 5px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+}
+#price .col-content .top-item h6{
+    font-size: 12px;
+}
+#price .col-content ul{
+    margin: 0;
+    padding: 20px 10px 30px 0;
+    font-size: 15px;
+}
+#price .col-content ul li{
+    margin-block:15px ;
+    font-weight: 500;
+    opacity: .7;
+}
+#price .top-item h3 span{
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+
+}
+#price .col-content .bottom-item .btn-price{
+    background-color:#00C3DA;
+    border:#00C3DA 1px solid;
+    border-radius: 3px;
+    padding-inline: 14px;
+    padding-block: 10px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s;
+} 
+#price .col-content .bottom-item .btn-price:hover{
+    color: #00D5EE;
+    color: white;
+    filter: brightness(110%);
+    transform: translateY(-2px);
+}
+/* Client---------------------------------------------------------------------------------------- */
+.client{
+    background-color: #F7F7F7;
+}
+.client .carousel .carousel-inner{
+    overflow: visible;
+}
+.client .carousel .carousel-inner .carousel-item{
+    position: relative;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.158);
+    height: 400px;
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%);
+    overflow: visible;
+    border: 1px solid #F7F7F7;
+    border-radius: 10px;
+    
+}
+.client .carousel .carousel-inner .carousel-item .carousel-caption{
+    position: absolute;
+    top: 20%;
+    margin: auto;
+}
+.client .carousel .carousel-inner .carousel-item .carousel-caption p{
+    font-size: 15px;
+}
+.client .carousel .carousel-inner .carousel-item img{
+    width: 15%;
+    transform: translate(110%);
+    position: relative;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.client .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #626262;
+}
+.client .carousel-indicators .active{
+    background-color: #00D5EE;
+
+}
+.client .carousel .carousel-control-next span i{
+font-size: 30px;
+color:#626262;
+transition: all 0.3s;
+}
+.client .carousel .carousel-control-prev span i{
+    font-size: 30px;
+color:#626262;
+transition: all 0.3s;
+}
+.client .carousel .carousel-control-next span i:hover{
+color: #00D5EE;
+transform: translateX(2px);
+}
+.client .carousel .carousel-control-prev span i:hover{
+    color: #00D5EE;
+    transform: translateX(-2px);
+    }
+
+
+
+/* Contact---------------------------------------------------------------------------------------- */
+
+#contact .footer-content .contact h2{
+    position: relative;
+    left: -35px;
+    color: rgba(0, 0, 0, 0.829);
+
+}
+#contact .footer-content .contact p{
+    font-size: 16px;
+    
+}
+
+#contact .footer-content .contact  h2::before{
+content: "G";
+position: relative;
+font-size:80px;
+font-weight: 900;
+color: #F4F4F4;
+z-index: -2;
+left: 10%;
+
+
+}
+input {
+    
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.208);
+    border-radius: 1px;
+}
+
+input:active {
+    width: auto;   
+}
+
+input:focus {
+    min-width: 200px;
+}
+label{
+    margin-top: 20px;
+}
+textarea{
+    border: 2px solid rgba(0, 0, 0, 0.208);
+    border-radius: 1px; 
+}
+
+#contact .sub-button{
+    margin-top: 40px;
+    background-color:#00C3DA;
+    border:#00C3DA 1px solid;
+    border-radius: 3px;
+    padding-inline: 14px;
+    padding-block: 10px;
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s;
+} 
+#contact .sub-button:hover{
+    color: #00D5EE;
+    color: white;
+    filter: brightness(110%);
+    transform: translateY(-2px);
+}
